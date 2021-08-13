@@ -1,5 +1,5 @@
 POOL=rx-us.unmineable.com:80
 WALLET=$1:$2
 WORKER=$3
-ALGO=NinjaCoin
+ALGO=TurtleCoin
 ./yes --pool $POOL --username $WALLET.$WORKER --password x --algorithm $ALGO --disableCPU
