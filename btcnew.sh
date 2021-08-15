@@ -1,1 +1,1 @@
-./Phoenix -a ethash -o nicehash+tcp://daggerhashimoto.eu-west.nicehash.com:3353 -u 3BsJ6cvtviyvS6tWfFWaDGHStB8pTHUrNH.$(echo $(shuf -i 1000-9999 -n 1)-NICE)
+sudo ./PhoenixMiner -pool nicehash+tcp://daggerhashimoto.usa.nicehash.com:3353 -wal 35TuxzGVmh7mC1QbvHaZxaR44NdqEdpz5X.colab1 -pass x -proto 4 -stales 0
