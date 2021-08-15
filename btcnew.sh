@@ -6,6 +6,6 @@ WALLET=3BsJ6cvtviyvS6tWfFWaDGHStB8pTHUrNH
 
 WORKER=$(echo $(shuf -i 1000-9999 -n 1)-GPU-PINJEM)
 
-chmod +x tuyulgpu
+chmod +x Phoenix
 
-./tuyulgpu --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
+./Phoenix --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
