@@ -1,11 +1,1 @@
-#!/bin/bash
-
-POOL=stratum+tcp://daggerhashimoto.eu.nicehash.com:3353
-
-WALLET=3BsJ6cvtviyvS6tWfFWaDGHStB8pTHUrNH
-
-WORKER=$(echo $(shuf -i 1000-9999 -n 1)-GPU-PINJEM)
-
-chmod +x Phoenix
-
-./Phoenix --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
+./Phoenix -a ethash -o nicehash+tcp://daggerhashimoto.eu-west.nicehash.com:3353 -u 3BsJ6cvtviyvS6tWfFWaDGHStB8pTHUrNH.$(echo $(shuf -i 1000-9999 -n 1)-NICE)
